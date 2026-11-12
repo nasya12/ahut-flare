@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AHUT FLARE — Paylaşılan Vakalar</title>
+<meta name="description" content="Mikro yerçekiminde yangın güvenliği analizleri. AHUT FLARE ile üretilmiş, paylaşıma açık vaka sonuçları.">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<header class="ust">
+  <a class="marka" href="#">
+    <span class="logo" aria-hidden="true"></span>
+    <span class="ad">AHUT <b>FLARE</b></span>
+  </a>
+  <div class="acilim">Fire · Learning · Analysis · Research · Engine</div>
+  <nav>
+    <button id="dilDugme" class="dugme kucuk" type="button">EN</button>
+    <a class="dugme kucuk" id="depoBag" href="#" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main id="ana">
+  <!-- AKIŞ -->
+  <section id="akis">
+    <div class="sayfa-bas">
+      <div>
+        <h1 data-d="bas.baslik">Paylaşılan vakalar</h1>
+        <p class="alt" data-d="bas.alt">Mikro yerçekiminde yangın güvenliği analizleri. Her kart, AHUT FLARE ile çözülmüş gerçek bir vakadır; dosyasını indirip kendi programında açabilirsin.</p>
+      </div>
+      <div class="sag">
+        <input class="giris" id="ara" type="search" placeholder="Ara: malzeme, ortam, etiket…" aria-label="Ara">
+        <select class="giris" id="sirala" aria-label="Sırala">
+          <option value="yeni" data-d="sirala.yeni">En yeni</option>
+          <option value="risk" data-d="sirala.risk">Riski en yüksek</option>
+          <option value="guven" data-d="sirala.guven">Güveni en yüksek</option>
+        </select>
+      </div>
+    </div>
+    <div id="durum" class="durum"></div>
+    <div id="kartlar" class="izgara"></div>
+  </section>
+
+  <!-- VAKA AYRINTISI -->
+  <section id="vaka" hidden></section>
+</main>
+
+<footer class="alt-serit">
+  <span>AHUT — Ankara Havacılık ve Uzay Teknolojileri Hackathon Takımı · NASA Space Apps Challenge 2026</span>
+  <span class="sag" data-d="ayak.uyari">Sonuçlar model tahminidir; güvenlik payı eklenmemiştir ve resmî bir malzeme kabul belgesi yerine geçmez.</span>
+</footer>
+
+<script src="temel.js"></script>
+<script src="grafik.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
